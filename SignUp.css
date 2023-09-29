@@ -1,0 +1,683 @@
+* {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+
+}
+
+#books{
+
+  display: flex;
+  align-items: center;
+  background:black;
+ 
+}
+#books_img{
+  width: 80px;
+  height:80px;
+  background: black;
+  border-radius: 30%;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  
+}
+#books h1{
+  color: white;
+  margin-left: 4px;
+  font-family: 'Antonio', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Cabin', sans-serif;
+  font-family: 'Noto Sans Old Permic', sans-serif;
+  font-family: 'Noto Sans Shavian', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  color:#fec748;
+}
+
+  
+#signUp{
+  margin-left: 68vw;
+  margin-right: 18px;
+  color:black ; 
+  background: black;
+  height: 40px;
+  width: 140px;
+  background-color: #fec748;
+  border: 2px solid #fec748;
+  border-radius: 40px;
+  font-family: 'Antonio', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Cabin', sans-serif;
+  font-family: 'Noto Sans Old Permic', sans-serif;
+  font-family: 'Noto Sans Shavian', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 580;
+  font-size: 15px;
+/* text-decoration: none; */
+  
+
+}
+#signUp a{
+  text-decoration: none;
+  /* color: white; */
+}
+#signUp:hover{
+  background-color: #fec748;
+  color: black;
+}
+@media screen and (max-width: 1200px) {
+  #signUp{
+   visibility: hidden;
+   margin-left: 0px;
+  }
+}
+
+.topnav {
+  background:black;
+  overflow: hidden;
+  border: 2px solid #fec748;
+  width: fit-content;
+  
+}
+
+
+.topnav a {
+  float: left;
+  /* margin-top: 15px ; */
+  color: white;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  font-size: 17px;
+ border: 1px solid #fec748;
+ font-family: 'Antonio', sans-serif;
+ font-family: 'Bebas Neue', sans-serif;
+ font-family: 'Cabin', sans-serif;
+ font-family: 'Noto Sans Old Permic', sans-serif;
+ font-family: 'Noto Sans Shavian', sans-serif;
+ font-family: 'Roboto', sans-serif;
+font-weight: 500;
+
+}
+
+
+.topnav a:hover {
+  background-color: #fec748;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #fec748;
+  color: black;
+}
+.icon {
+  display: none;
+
+  height: 50px;
+
+}
+@media screen and (max-width: 670px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 670px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    border: 1px solid white;
+
+  }
+  .topnav{
+    width: 100%;
+  }
+}
+
+  @import url(
+    "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    
+    * {
+        /* margin: 0; */
+        padding: 0;
+        box-sizing: border-box;
+        /* font-family: "Poppins", sans-serif; */
+    }
+    
+    body {
+        height: 100vh;
+        width: 100vw;
+
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* flex-direction: column; */
+        /* gap: 30px; */
+        background-color: black;
+    }
+    
+    
+    .title {
+        font-weight: 400;
+        letter-spacing: 1.5px;
+    }
+    #whole{
+     background-image: url("collage.jpg");
+     animation: an 1s ease-out 1 both;
+    }
+    @keyframes an{
+        from{
+            opacity: 0;
+            transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 0deg);
+        }
+        to{
+            opacity: 1;
+            transform: perspective(500px) translate3d(0, 0, 0);
+        }
+      }
+    .container {
+          
+        height: 610px;
+        width: 500px;
+        border: 4px solid  #916500;
+        border-radius: 40px;
+        background-color: black;
+        /* background-image: url("collage.jpg"); */
+        box-shadow: 8px 8px 20px rgba(128, 128, 128, 0.548);
+        position: relative;
+        overflow: hidden;
+        margin-left: 30%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        animation: an 1s ease-out 1 both;
+    }
+   @media screen and (max-width : 790px) {
+    .container{
+      margin-left: 22%;
+      
+    }
+    
+   }
+   @media screen and (max-width :449px) {
+    .container{
+      margin-left: 18%;
+      
+    }
+    
+   }
+   @media screen and (max-width :409px) {
+    .container{
+      margin-left: 12%;
+      
+    }
+    
+   }
+    
+    .btn {
+        height: 60px;
+        width: 300px;
+        margin: 20px auto;
+        box-shadow: 10px 10px 30px #e7a60f;
+        border-radius: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .login{
+        
+            font-size: 22px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            position: relative;
+            cursor: pointer;
+            color: white;
+            font-weight: bolder;
+        
+    }
+    .signup {
+        font-size: 22px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        position: relative;
+        cursor: pointer;
+        font-weight: bolder;
+        color: white;
+    }
+    
+    .slider {
+        height: 60px;
+        width: 150px;
+        border-radius: 50px;
+        background-image: linear-gradient(to right,
+        #fcb308e1,
+        #ffd063);
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .moveslider {
+        left: 250px;
+    }
+    
+    .form-section {
+        height: 500px;
+        width: 1000px;
+        padding: 20px 0;
+        display: flex;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+        left: 0px;
+    }
+    
+    .form-section-move {
+        left: -500px;
+    }
+    
+    .login-box,
+    .signup-box {
+        height: 100%;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 40px;
+    }
+    
+    .login-box {
+        gap: 50px;
+    }
+    #email{
+        color: white;
+ 
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #email h3{
+        margin-bottom: 8px;
+  margin-left: 7px;
+    }
+    #password{
+        color: white;
+
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #password h3{
+        margin-bottom: 8px;
+  margin-left: 7px;
+    }
+    
+    .signup-box {
+        gap: 30px;
+    }
+    #name{
+        color: white;
+        height: 67px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #name h4{
+        
+        margin-bottom: 8px;
+  margin-left: 7px;
+     }
+    #yourmail{
+        color: white;
+        height: 67px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #yourmail h4{
+        
+        margin-bottom: 8px;
+  margin-left: 7px;
+     }
+    
+    #yourpass{
+        color: white;
+        height: 67px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #yourpass h4{
+        
+        margin-bottom: 8px;
+  margin-left: 7px;
+     }
+    
+    #confirmpass{
+        color: white;
+        height: 67px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #confirmpass h4{
+        
+        margin-bottom: 8px;
+  margin-left: 7px;
+     }
+    
+    .ele {
+        height: 60px;
+        width: 400px;
+        outline: none;
+        border: none;
+        color: rgb(77, 77, 77);
+        background-color: rgba(240, 240, 240, 0.158);
+        border-radius: 50px;
+        padding-left: 30px;
+        font-size: 18px;
+    }
+    
+    .clkbtn {
+        height: 60px;
+        width: 150px;
+        color: black;
+        border-radius: 50px;
+        background-image: linear-gradient(to right,
+        #fcb308e1,
+        #ffd063);
+        font-size: 24px;
+        border: none;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+    
+    /* For Responsiveness of the page */
+    
+    @media screen and (max-width: 650px) {
+        .container {
+            height: 600px;
+            width: 300px;
+        }
+    
+        .title {
+            font-size: 15px;
+        }
+    
+        .btn {
+            height: 50px;
+            width: 200px;
+            margin: 20px auto;
+        }
+    
+        .login,
+        .signup {
+            font-size: 19px;
+        }
+    
+        .slider {
+            height: 50px;
+            width: 100px;
+            left: 50px;
+        }
+    
+        .moveslider {
+            left: 150px;
+        }
+    
+        .form-section {
+            height: 500px;
+            width: 600px;
+        }
+    
+        .form-section-move {
+            left: -300px;
+        }
+    
+        .login-box,
+        .signup-box {
+            height: 100%;
+            width: 300px;
+        }
+    
+        .ele {
+            height: 50px;
+            width: 250px;
+            font-size: 15px;
+        }
+    
+        .clkbtn {
+            height: 50px;
+            width: 130px;
+            font-size: 19px;
+        }
+    }
+    
+    @media screen and (max-width: 320px) {
+        .container {
+            height: 600px;
+            width: 250px;
+        }
+    
+        .heading {
+            font-size: 30px;
+        }
+    
+        .title {
+            font-size: 10px;
+        }
+    
+        .btn {
+            height: 50px;
+            width: 200px;
+            margin: 20px auto;
+        }
+    
+        .login,
+        .signup {
+            font-size: 19px;
+        }
+    
+        .slider {
+            height: 50px;
+            width: 100px;
+            left: 27px;
+        }
+    
+        .moveslider {
+            left: 127px;
+        }
+    
+        .form-section {
+            height: 500px;
+            width: 500px;
+        }
+    
+        .form-section-move {
+            left: -250px;
+        }
+    
+        .login-box,
+        .signup-box {
+            height: 100%;
+            width: 250px;
+        }
+    
+        .ele {
+            height: 50px;
+            width: 220px;
+            font-size: 15px;
+        }
+    
+        .clkbtn {
+            height: 50px;
+            width: 130px;
+            font-size: 19px;
+        }
+    }
+    #footer{
+      color: white;
+      margin-top: 20px;
+      margin-bottom: 25px;
+      display: flex;
+      gap: 30px;
+     
+        
+      
+    }
+    .footer-info{
+      display: flex;
+      gap: 30px;
+      
+      padding-left: 40px;
+      
+      }
+      
+    #footer h5{
+      font-weight: 600;
+      font-family: 'Bebas Neue', sans-serif;
+      font-family: 'Cabin', sans-serif;
+    }
+    .footers{
+      text-decoration: none;
+      color: white;
+      
+    }
+    .footers:hover{
+      border-bottom: 3px solid#e7a60f;
+    }
+    
+    #after{
+      margin-top: 90px;
+    }
+    
+    .fa {
+      margin-top: -3vh;
+      width: 5vw;
+      text-align: center;
+      text-decoration: none;
+     
+    }
+    
+    
+    
+    .fa:hover {
+      opacity: 0.4;
+    }
+    #social{
+      margin-left: 40vw;
+      
+      
+    }
+    @media screen and (max-width:1173px) {
+      #social{
+        margin-left: 35vw;
+        
+      }
+      
+    }
+    @media screen and (max-width:1048px) {
+      #social{
+        margin-left: 30vw;
+        
+      }
+      
+    }
+    @media screen and (max-width:943px) {
+      #social{
+        margin-left: 25vw;
+        
+      }
+      
+    }
+    @media screen and (max-width:857px) {
+      #social{
+        margin-left: 20vw;
+        
+      }
+      
+    }
+    @media screen and (max-width:857px) {
+      #social{
+        margin-left: 20vw;
+        
+      }
+      
+    }
+    @media screen and (max-width:786px) {
+      #social{
+        margin-left: 15vw;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        gap: 10px;
+        
+      }
+    
+      
+    }
+    @media screen and (max-width:725px) {
+      #social{
+        margin-left: 10vw;
+        
+      }
+      
+    }
+    @media screen and (max-width:710px) {
+      #footer{
+        display: block;
+      }
+      #social{
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 60px;
+        gap: 40px;
+    
+      }
+      .footer-info{
+        display: flex;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+      }
+      
+    }
+  /* Facebook */
+  .fa-facebook {
+  
+    color: white;
+    
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55acee00;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #12578800;
+    color: white;
+   
+   
+  }
+  .fa-linkdin {
+    background: #12578800;
+    color: white;
+    
+  }
+  
+  
